@@ -8,10 +8,10 @@ let person = document.querySelector('.person');
 btn.addEventListener('click', function () {
   fetch("https://type.fit/api/quotes")
     .then(response => response.json())
-    .then(response => {
-      let randomNum = Math.floor(Math.random() * response.length)
-      quote.innerText = response[randomNum].text;
-      person.innerText = response[randomNum].author;
+    .then(reponse => {
+      let randomNum = Math.floor(Math.random() * reponse.length)
+      quote.innerText = reponse[randomNum].text;
+      person.innerText = reponse[randomNum].author;
     })
     //   response.forEach(item => {
     //   quote.textContent = item.text;
