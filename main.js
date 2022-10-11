@@ -18,5 +18,12 @@ btn.addEventListener('click', function () {
     //   person.textContent = item.author;
     // }
     // ))
-    .catch(err => console.error(err));
+    .catch(err => {
+        quote.innerText = '';
+        const message = "Connect to the internet and try again!"
+        const errorMsg = document.createElement("p");
+        errorMsg.style.color = 'red';
+        errorMsg.innerText = message;
+        quote.appendChild(errorMsg);
+    });
 })
