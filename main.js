@@ -15,7 +15,7 @@ btn.addEventListener('click', function () {
   fetch("https://type.fit/api/quotes")
     .then(response => response.json() )
     .then(response => {
-      let randomNum = Math.floor(Math.random() * response.length)
+      let randomNum = Math.floor(Math.random() * response.length);
       quote.innerText = response[randomNum].text;
       person.innerText = response[randomNum].author;
     })
