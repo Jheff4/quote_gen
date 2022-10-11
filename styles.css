@@ -43,6 +43,7 @@ body {
 .main-content .text-area {
   font-size: 1.5rem;
   line-height: 1.5;
+  position: relative;
 }
 
 .main-content .person {
@@ -74,4 +75,34 @@ body {
 code {
   font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
   color: chocolate;
+}
+
+/* Loading animation */
+.loader {
+  border: 5px solid #dfdede;
+  border-radius: 50%;
+  border-top: 5px solid #262626;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 2px;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  /* transform: translate(50%, -50%); */
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
