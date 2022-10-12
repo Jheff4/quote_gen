@@ -79,7 +79,7 @@ code {
 
 /* Loading animation */
 .loader {
-  border: 5px solid #dfdede;
+  border: 5px solid #d3d2d2;
   border-radius: 50%;
   border-top: 5px solid #262626;
   width: 40px;
