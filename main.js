@@ -5,6 +5,7 @@ let mainContainer = document.querySelector('.main-content');
 let quote = document.querySelector('.quote');
 let person = document.querySelector('.person');
 
+// Loading Animation
 function happen() {
   mainContainer.style.backgroundColor = '#dfdede';
   const load = document.createElement("div");
@@ -23,11 +24,7 @@ btn.addEventListener('click', function () {
       quote.innerText = response[randomNum].text;
       person.innerText = response[randomNum].author;
     })
-    //   response.forEach(item => {
-    //   quote.textContent = item.text;
-    //   person.textContent = item.author;
-    // }
-    // ))
+   
     .catch(err => {
         mainContainer.style.backgroundColor = '#fff';
         quote.innerText = '';
